@@ -15,8 +15,8 @@ public class Producto {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     private String nombre;
-    private String description;
-    private String iamge;
+    private String descripcion;
+    private String imagen;
     private double precio;
     private int cantidad;
 
@@ -26,11 +26,11 @@ public class Producto {
     public Producto() {
     }
 
-    public Producto(Integer id, String nombre, String description, String iamge, double precio, int cantidad, Usuario usuario) {
+    public Producto(Integer id, String nombre, String descripcion, String imagen, double precio, int cantidad, Usuario usuario) {
         this.id = id;
         this.nombre = nombre;
-        this.description = description;
-        this.iamge = iamge;
+        this.descripcion = descripcion;
+        this.imagen = imagen;
         this.precio = precio;
         this.cantidad = cantidad;
         this.usuario = usuario;
@@ -48,17 +48,17 @@ public class Producto {
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
-    public String getDescription() {
-        return description;
+    public String getDescripcion() {
+        return descripcion;
     }
-    public void setDescription(String description) {
-        this.description = description;
+    public void setDescripcion(String descripcion) {
+        this.descripcion = descripcion;
     }
-    public String getIamge() {
-        return iamge;
+    public String getImagen() {
+        return imagen;
     }
-    public void setIamge(String iamge) {
-        this.iamge = iamge;
+    public void setImagen(String imagen) {
+        this.imagen = imagen;
     }
     public double getPrecio() {
         return precio;
@@ -83,7 +83,7 @@ public class Producto {
 
     @Override
     public String toString() {
-        return "Producto [id=" + id + ", nombre=" + nombre + ", description=" + description + ", iamge=" + iamge
+        return "Producto [id=" + id + ", nombre=" + nombre + ", descripcion=" + descripcion + ", imagen=" + imagen
                 + ", precio=" + precio + ", cantidad=" + cantidad + "]";
     }
 
